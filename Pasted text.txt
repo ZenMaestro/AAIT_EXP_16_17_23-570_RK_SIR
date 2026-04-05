@@ -1,0 +1,224 @@
+Aim
+To implement the core components of an end-to-end AI solution as a team, including dataset preparation,
+model development, basic evaluation, and alignment with the planned user interface and workflow.
+What this experiment really means
+In this experiment, your team is no longer only planning. Now you must start building the actual working core
+of your capstone solution.
+• Take the problem statement from earlier experiments.
+• Use the workflow already drawn in Visual Paradigm.
+• Use the wireframes already designed in Figma.
+• Build the model in Python / Colab / VS Code.
+• Track progress in Trello and store work in GitHub.
+Important: This is not expected to be a perfect final product. The goal is to show a clear working build
+phase: data -> model -> result -> connection to your planned UI/workflow.
+
+Minimum outcomes expected from each team
+• A clear problem statement and project title.
+• A usable dataset (cleaned or partially prepared).
+• One working model: regression / classification / simple text or image model.
+• Basic evaluation result: Accuracy / Precision-Recall / MSE / R2, depending on the problem.
+• Proof that model input and output match the Figma screens and workflow plan.
+• Trello updated with build tasks.
+• GitHub updated with code, README, and progress.
+Simple build workflow
+1. Recheck the problem, inputs, outputs, and user flow.
+2. Prepare the dataset.
+3. Choose a suitable model type.
+4. Train and test the model.
+5. Check the evaluation result.
+6. Make small improvements if needed.
+7. Match the model output with the UI/wireframes.
+8. Push code and updates to GitHub.
+9. Update Trello with completed and pending tasks.
+
+Page 2 of 6
+
+Step-by-step student guide
+Step 1: Revisit your capstone idea
+• Read your problem statement again.
+• Write clearly: What is the input? What is the output? Who is the user?
+• Check whether your Visual Paradigm flow and Figma screens still match the same idea.
+Step 2: Prepare the dataset
+• Load the data and inspect it.
+• Check columns / labels / classes / missing values.
+• Remove obvious errors, duplicates, or empty rows if needed.
+• Keep only useful fields if your dataset has too many unnecessary columns.
+Step 3: Choose the model type
+• Use regression if output is a number (example: score prediction, price prediction).
+• Use classification if output is a class/label (example: spam/not spam, healthy/diseased).
+• Use a simple text model if your input is text.
+• Use a simple image model if your input is image-based.
+Step 4: Train the model
+• Split data into training and testing sets where applicable.
+• Train a basic model first. Do not start with a very complex model.
+• Make sure the code runs fully from start to end.
+Step 5: Evaluate the result
+• For classification: Accuracy, Precision, Recall, F1, confusion matrix (basic level is enough).
+• For regression: MSE, MAE, or R2.
+• Write down the result clearly.
+Step 6: Align with your UI and workflow
+• Check whether the model expects the same input fields that your Figma screen shows.
+• Check whether the result message in the UI matches the actual model output.
+• Update labels, field names, or output messages if they are inconsistent.
+Step 7: Document the build progress
+• Update Trello task status.
+• Commit code and README changes to GitHub with clear messages.
+• Use Tableau or simple plots if you want to explain data trends or model results better.
+Dataset basics for capstone projects
+A dataset is the collection of examples your AI model learns from. A good dataset should match your problem
+clearly.
+Problem type Typical input Typical output Example capstone idea
+
+Page 3 of 6
+Regression Numeric/tabular features A number Predict study score, crop
+yield, house price
+
+Classification Tabular/text/image
+
+features
+
+A label/class Spam detection, disease
+class, risk level
+Text model Sentence / paragraph Class or response Complaint classifier, FAQ
+
+support tool
+
+Image model Images Class / prediction Plant disease detection,
+safety helmet check
+
+How to choose a dataset properly
+• Choose a dataset that directly supports your capstone problem.
+• Do not choose a very large or very difficult dataset if your team cannot finish on time.
+• Check whether the dataset has a clear target column or label.
+• Check whether you are allowed to use/share it. Read the license or usage note if available.
+• For image or text datasets, start small. A small clean dataset is better than a huge confusing dataset.
+Where to find datasets
+Students can search for project datasets from the following common sources:
+• Kaggle - good for tabular, text, image, and student-friendly project datasets.
+• UCI Machine Learning Repository - very good for classic small academic datasets.
+• Hugging Face Datasets - useful for NLP, text, audio, image, and modern ML datasets.
+• GitHub repositories - sometimes project authors share CSV files, sample datasets, notebooks, or processed
+data.
+• ImageNet / CIFAR / MNIST / COCO style public datasets - useful for image-based projects.
+• Government open-data portals or institution datasets - useful for local problem statements.
+• Your own collected small dataset - useful if the problem is very specific and public data is not available.
+How to use a dataset in your capstone
+10. Understand the problem first.
+11. Identify the input columns/features.
+12. Identify the output/target column.
+13. Clean the data: missing values, wrong labels, duplicates, extra spaces, bad formatting.
+14. Split into train/test (if needed).
+15. Train a simple baseline model first.
+16. Check whether the result is reasonable.
+17. Only then do small improvements or feature changes.
+Dataset Rule: Do not collect a dataset just because it looks interesting. First ask: 'Does this dataset
+really solve our problem statement?'
+
+Page 4 of 6
+
+Simple dataset examples that make sense for student capstones
+Capstone topic Suggested dataset type Possible source Basic model idea
+Student performance
+support tool
+
+Tabular CSV Kaggle / UCI / your
+college sample data
+
+Regression or
+classification
+
+Spam / complaint
+message assistant
+
+Text dataset Kaggle / Hugging Face /
+
+UCI
+
+TF-IDF + Naive Bayes /
+Logistic Regression
+
+Plant disease checker Image dataset Kaggle / ImageNet-style
+
+public datasets / self-
+collected images
+
+Simple image classifier
+
+Placement or career
+prediction helper
+
+Tabular CSV Kaggle / UCI Classification
+
+Basic FAQ / support
+assistant
+
+Question-answer pairs or
+rule list
+
+Self-prepared + project
+notes + GitHub examples
+
+Rule-based or small NLP
+flow
+
+Tools in this experiment and their role
+Tool Use in build phase Example output
+Trello Track tasks and team progress Build phase task status
+Visual Paradigm Check architecture / workflow Updated flow diagram
+Figma Match UI with model input/output Input form + result screen
+VS Code / Colab Model training and testing Notebook / script
+Tableau / Plots Show trends or results Charts / dashboard / plots
+GitHub Store code, README, progress Repository commits + files
+
+What to update in GitHub during this experiment
+• Push the latest notebook / Python code.
+• Update README with project title, problem statement, tools used, current status, and how to run the
+code.
+
+Page 5 of 6
+
+• If allowed, add a small sample dataset or a sample input file.
+• Use clear commit messages such as: 'add baseline model', 'clean dataset and retrain', 'update README and
+results'.
+Suggested repository structure
+AAIT-Capstone-Project/
+|- README.md
+|- data/
+|- notebooks/
+|- src/
+|- outputs/
+|- figma-links-or-screens/
+|- vp-diagram/
+|- trello-notes/
+
+What to update in Trello
+• Move completed tasks to Done.
+• Keep current work in Doing / In Progress.
+• Add pending work such as testing, UI integration, final presentation, and documentation.
+• Assign owners clearly to avoid confusion inside the team.
+Common mistakes to avoid
+• Building the model without checking whether the dataset matches the problem.
+• Using too many tools, but not connecting them properly.
+• Showing a Figma screen that does not match actual model input/output.
+• Choosing a very complex dataset and getting stuck.
+• Not writing the evaluation result clearly.
+• Not pushing progress to GitHub until the last minute.
+Output / Reflection guidance
+In your record, write a short paragraph covering these points:
+• Current status of the capstone after the build phase.
+• Dataset used and why you selected it.
+• Model used and basic evaluation result.
+• How well the model input/output aligns with your workflow and UI.
+• Main technical or practical challenge faced by the team.
+Quick checklist before you finish EXP-16
+• [ ] Problem statement confirmed
+• [ ] Dataset selected and cleaned
+• [ ] Model trained
+• [ ] Evaluation result noted
+
+Page 6 of 6
+
+• [ ] UI / workflow alignment checked
+• [ ] GitHub updated
+• [ ] Trello updated
+• [ ] Plots / dashboard added if needed
